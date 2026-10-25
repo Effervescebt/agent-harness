@@ -1,0 +1,35 @@
+{
+ "n": 30,
+ "success_rate": 0.0,
+ "success_ci95": [
+  0.0,
+  0.0
+ ],
+ "mean_score": 0.33888888888888885,
+ "score_ci95": [
+  0.26666666666666666,
+  0.4111111111111111
+ ],
+ "cost_per_task_usd": 0.0,
+ "total_cost_usd": 0.0,
+ "cost_per_success_usd": 0.0,
+ "latency_p50_s": 21.77282816648949,
+ "latency_p95_s": 45.06041251495476,
+ "mean_steps": 19.1,
+ "mean_input_tokens": 54779.1,
+ "mean_output_tokens": 573.6,
+ "cache_hit_rate": 0.0,
+ "cache_write_rate": 0.0,
+ "tool_error_rate": 0.0,
+ "repair_steps": 0,
+ "escalation_rate": 0.0,
+ "prefix_breaks_per_task": 0.0,
+ "compactions_per_task": 0.0,
+ "status": {
+  "answered": 30
+ },
+ "run_wall_s": 130.56533783394843,
+ "concurrency": 6,
+ "gpu_cost_per_task_usd": 0.0008341674361613371,
+ "sessions_per_gpu_hour": 827.1720641304755
+}

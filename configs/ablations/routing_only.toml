@@ -1,0 +1,9 @@
+# Ablation: baseline + cheap-model cascade only.
+[routing]
+strategy = "cascade"
+primary = "mock"
+strong = "mock"
+[agent]
+max_steps = 10
+parallel_tools = false
+compression = "none"

@@ -1,0 +1,20 @@
+# Self-hosted serving experiment: Qwen3-8B on vLLM (L40), context strategy x prefix caching.
+[routing]
+strategy = "single"
+primary = "qwen3_8b_vllm"
+
+[cache]
+enabled = true
+
+[gpu]
+name = "NVIDIA L40 48GB (RunPod community)"
+usd_per_hour = 0.69
+
+[agent]
+max_steps = 40
+max_tokens_per_step = 1024
+parallel_tools = false
+compression = "none"
+keep_last = 2
+old_chars = 200
+checkpoint_chars = 8000

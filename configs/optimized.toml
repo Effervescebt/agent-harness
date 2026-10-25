@@ -1,0 +1,15 @@
+# All optimizations on: parallel tools, compressed history, cheap model first with escalation.
+[routing]
+strategy = "cascade"    # cheap model; rerun on the strong model only when the cheap run fails
+primary = "mock"        # -> "cheap"
+strong = "mock"         # -> "strong"
+
+[agent]
+max_steps = 8
+max_tokens_per_step = 512
+parallel_tools = true
+compression = "truncate"
+keep_last = 2
+old_chars = 200
+max_repairs = 3
+force_final_answer = true

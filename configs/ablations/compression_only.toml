@@ -1,0 +1,10 @@
+# Ablation: baseline + truncation of old tool results only.
+[routing]
+strategy = "single"
+primary = "mock"
+[agent]
+max_steps = 10
+parallel_tools = false
+compression = "truncate"
+keep_last = 2
+old_chars = 200

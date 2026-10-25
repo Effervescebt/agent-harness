@@ -1,0 +1,8 @@
+# Ablation: baseline + parallel tool execution only.
+[routing]
+strategy = "single"
+primary = "mock"
+[agent]
+max_steps = 10
+parallel_tools = true
+compression = "none"

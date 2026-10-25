@@ -1,0 +1,12 @@
+# Baseline: one strong model, full history every step, sequential tools, no routing.
+[routing]
+strategy = "single"
+primary = "mock"        # change to "strong" once models.toml has real entries
+
+[agent]
+max_steps = 10
+max_tokens_per_step = 1024
+parallel_tools = false
+compression = "none"
+max_repairs = 3
+force_final_answer = true

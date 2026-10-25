@@ -1,0 +1,16 @@
+# Feature 1 experiment: context strategy x prompt caching on sonnet.
+[routing]
+strategy = "single"
+primary = "sonnet"
+
+[cache]
+enabled = true
+
+[agent]
+max_steps = 40
+max_tokens_per_step = 1024
+parallel_tools = false
+compression = "checkpoint"
+keep_last = 2
+old_chars = 200
+checkpoint_chars = 8000
